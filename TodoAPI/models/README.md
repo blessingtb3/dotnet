@@ -1,0 +1,3 @@
+Before diving into creating our Todo model, it's important to know what a model does in .NET CORE. Think of a model as a blueprint for the kind of data our application will work with. It helps us organize and manage this data efficiently.
+
+For our Todo list app, we need a clear picture of what each Todo item looks like. This means deciding on things like names, descriptions, whether it's done or not, deadlines, priorities, and when it was made or changed. By being clear about these details, we can handle and show our Todo items well.
