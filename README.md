@@ -90,11 +90,11 @@ REST API requests might include data for the POST, PUT, and other HTTP methods t
 # Parameters
 
 # RESTful API requests can include parameters that give the server more details about what needs to be done. The following are some different types of parameters:
-Path parameters that specify URL details.
-Query parameters that request more information about the resource.
-Cookie parameters that authenticate clients quickly.
-What are RESTful API authentication methods?
-A RESTful web service must authenticate requests before it can send a response. Authentication is the process of verifying an identity. For example, you can prove your identity by showing an ID card or driver's license. Similarly, RESTful service clients must prove their identity to the server to establish trust.
+- Path parameters that specify URL details.
+- Query parameters that request more information about the resource.
+- Cookie parameters that authenticate clients quickly.
+- What are RESTful API authentication methods?
+- A RESTful web service must authenticate requests before it can send a response. Authentication is the process of verifying an identity. For example, you can prove your identity by showing an ID card or driver's license. Similarly, RESTful service clients must prove their identity to the server to establish trust.
 
 # RESTful API has four common authentication methods:
 
