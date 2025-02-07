@@ -122,14 +122,13 @@ REST principles require the server response to contain the following main compon
 The status line contains a three-digit status code that communicates request success or failure. For instance, 2XX codes indicate success, but 4XX and 5XX codes indicate errors. 3XX codes indicate URL redirection.
 
 # The following are some common status codes:
-200: Generic success response
-201: POST method success response
-400: Incorrect request that the server cannot process
-404: Resource not found
-Message body
-The response body contains the resource representation. The server selects an appropriate representation format based on what the request headers contain. Clients can request information in XML or JSON formats, which define how the data is written in plain text. For example, if the client requests the name and age of a person named John, the server returns a JSON representation as follows:
+- 200: Generic success response
+- 201: POST method success response
+- 400: Incorrect request that the server cannot process
+- 404: Resource not found
 
-'{"name":"John", "age":30}'
+# Message body
+The response body contains the resource representation. The server selects an appropriate representation format based on what the request headers contain. Clients can request information in XML or JSON formats, which define how the data is written in plain text. For example, if the client requests the name and age of a person named John, the server returns a JSON representation as follows: '{"name":"John", "age":30}'
 
 # Headers
 The response also contains headers or metadata about the response. They give more context about the response and include information such as the server, encoding, date, and content type.
