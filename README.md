@@ -40,6 +40,36 @@ Understanding Minimal APIs:
 
 In this dotnet web api project, we are going to create a todo list wep API
 
+# Steps 
+- create app using: dotnet new webapi -n <nameOfApplication>
+- edit program.cs 
+- create models
+
+install packages using dotnet CLI:
+
+dotnet add package Microsoft.EntityFrameworkCore --version 8.0.0 
+- Provides the core Entity Framework Core functionality, enabling us to interact with our database.
+
+dotnet add package Microsoft.EntityFrameworkCore.Design --version 8.0.0
+- Includes design-time components for Entity Framework Core, such as migrations.
+
+dotnet add package Microsoft.EntityFrameworkCore.SqlServer --version 8.0.0
+- Allows us to use SQL Server as our database provider.
+
+dotnet add package AutoMapper --version 13.0.1
+- Simplifies object-to-object mapping, making it easier to map properties between different objects.
+# Note: Ensure you install the same versions of the packages as shown above to avoid any compatibility issues.
+- To confirm that all the packages have been installed successfully, navigate to the TodoAPI.csproj file located in the root directory of your project. The installed packages should be listed under the ItemGroup section.
+
+With the necessary packages installed, we're now ready to set up the database context for our Todo API.
+
+# Database Context
+In ASP.NET Core, the database context is a crucial component that manages interactions with the database. It's responsible for tasks such as establishing a connection to the database, querying data, and saving changes.
+
+
+
+
+
 
 
 
