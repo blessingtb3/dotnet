@@ -68,7 +68,7 @@ In ASP.NET Core, the database context is a crucial component that manages intera
 
 
 
-
+This project can be found on https://www.freecodecamp.org/news/build-crud-operations-with-dotnet-core-handbook/#heading-step-4-set-up-the-database-context
 
 
 
