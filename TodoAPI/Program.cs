@@ -11,6 +11,14 @@ builder.Services.AddControllers(); // Adds controller services to the applicatio
 builder.Services.AddEndpointsApiExplorer(); // Adds support for discovering API endpoints
 builder.Services.AddSwaggerGen(); // Adds support for generating Swagger documentation
 
+
+//Add with mapping
+builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
+
+
+
+
+
 // Registering DbContext to enable usage of TodoDbContext for interacting with the database
 builder.Services.Configure<DbSettings>(builder.Configuration.GetSection("DbSettings")); // Configures DbSettings from appsettings.json
 builder.Services.AddSingleton<TodoDbContext>(); // Registers TodoDbContext as a singleton service
