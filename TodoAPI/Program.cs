@@ -1,29 +1,24 @@
 // program.cs
 using DBSettings;
 using TodoAPI.AppDataContext;
-using TodoAPI.models;
+using TodoAPI.Models;
 
 var builder = WebApplication.CreateBuilder(args); // used to configure and build the application's services and middleware pipeline, effectively acting as the container for the application's dependencies
 
 // Add services to the container.
 builder.Services.AddControllers(); // Adds controller services to the application
-
 builder.Services.AddEndpointsApiExplorer(); // Adds support for discovering API endpoints
 builder.Services.AddSwaggerGen(); // Adds support for generating Swagger documentation
-
-
-//Add with mapping
-builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
-
-
-
-
+builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());//Add with mapping
 
 // Registering DbContext to enable usage of TodoDbContext for interacting with the database
 builder.Services.Configure<DbSettings>(builder.Configuration.GetSection("DbSettings")); // Configures DbSettings from appsettings.json
 builder.Services.AddSingleton<TodoDbContext>(); // Registers TodoDbContext as a singleton service
 
 var app = builder.Build(); // Builds the application
+
+
+
 
 // Create a scope to get the service provider
 {
@@ -39,6 +34,7 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection(); // Redirects HTTP requests to HTTPS
+
 
 
 

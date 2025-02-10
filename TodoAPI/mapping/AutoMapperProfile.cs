@@ -1,6 +1,6 @@
 using AutoMapper;
-//using TodoAPI.contracts;
-using TodoAPI.models;
+using TodoAPI.Contracts;
+using TodoAPI.Models;
 
 
 namespace TodoAPI.MappingProfiles{
