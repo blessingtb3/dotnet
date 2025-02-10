@@ -4,9 +4,9 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Options;
 using TodoAPI.models;
 
-namespace TodoDbContext.AppDataContext{
+namespace TodoAPI.AppDataContext{
 
-    //TodoDbContext class inherits from DbContext
+    //TodoDbContext class is the primary class that interacts with the database and also inherits from DbContext
     public class TodoDbContext : DbContext{
 
         //DbSettings field to store the connection string
