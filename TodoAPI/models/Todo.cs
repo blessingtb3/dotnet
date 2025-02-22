@@ -2,7 +2,7 @@
 using System.ComponentModel.DataAnnotations;
 
 //Todo model with respective attributes and Todo contructor
-namespace TodoAPI.models{
+namespace TodoAPI.Models{
 
     public class Todo
     {
