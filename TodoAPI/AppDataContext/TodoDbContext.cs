@@ -2,7 +2,7 @@
 using DBSettings;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Options;
-using TodoAPI.models;
+using TodoAPI.Models;
 
 namespace TodoAPI.AppDataContext{
 
