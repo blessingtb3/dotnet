@@ -67,9 +67,14 @@ With the necessary packages installed, we're now ready to set up the database co
 In ASP.NET Core, the database context is a crucial component that manages interactions with the database. It's responsible for tasks such as establishing a connection to the database, querying data, and saving changes.
 
 
+# Swagger UI API Testing
+- While we'll be using Postman within Visual Studio Code for making API requests, it's worth noting that .NET 8 includes a built-in Swagger UI. This feature allows us to interact with our API endpoints directly from a web browser. To access the Swagger UI, open your browser and navigate to https://localhost:5086/swagger/index.html. You should see a page similar to the one below:
+Test the API on: http://localhost:5038/swagger/index.html
 
-This project can be found on https://www.freecodecamp.org/news/build-crud-operations-with-dotnet-core-handbook/#heading-step-4-set-up-the-database-context
 
+# This project can be found on 
+- [freeCodeCamp](https://www.freecodecamp.org/news/build-crud-operations-with-dotnet-core-handbook/#heading-step-4-set-up-the-database-context)
+- [Code](https://github.com/blessingtb3/dotnet.git)
 
 
 
