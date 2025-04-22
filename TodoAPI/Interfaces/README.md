@@ -1,0 +1,2 @@
+# Service Interface
+In .NET development, the service layer encapsulates the core business logic of an application. It serves as a bridge between the controller and the database, ensuring a clean separation of concerns.
