@@ -52,3 +52,30 @@ namespace TodoAPI.Controllers{
         }
     }
 }
+
+//Now that we have implemented the controller, we can test the API using tools like Postman or Swagger UI.
+//.NET 8 includes a built-in Swagger UI. 
+// This feature allows us to interact with our API endpoints directly from a web browser. 
+// To access the Swagger UI, run your application then open your browser and navigate to https://localhost:5086/swagger/index.html. 
+// You should see a page with the swagger UI, however it will not work until you make your connection string and migrations.:
+//Also , install all relevant nugget packages found in our csproj file
+/*
+    <PackageReference Include="AutoMapper" Version="13.0.1" />
+    <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="9.0.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="9.0.2" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="9.0.2" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="9.0.2" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="9.0.2" /> 
+    <PackageReference Include="Microsoft.OpenApi" Version="1.6.22" />
+    <PackageReference Include="Swashbuckle.AspNetCore.Swagger" Version="7.2.0" />
+    <PackageReference Include="Swashbuckle.AspNetCore.SwaggerGen" Version="7.2.0" />
+    <PackageReference Include="Swashbuckle.AspNetCore.SwaggerUI" Version="7.2.0" />
+*/
+//To create the database and apply the migrations, run the following commands in the terminal:
+//dotnet ef migrations add InitialCreate --output-dir Data/Migrations
+//dotnet ef database update
+//This will create the database and apply the migrations, allowing you to interact with the API using the Swagger UI.
+//You can now test the API by creating and retrieving Todo items using the Swagger UI or Postman.
+//This is a basic example of how to create a RESTful API using ASP.NET Core and Entity Framework Core.
+//You can further enhance the API by adding more features like authentication, authorization, and validation.
+//You can also explore other features of ASP.NET Core and Entity Framework Core to build more complex and robust applications.
